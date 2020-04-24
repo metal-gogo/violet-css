@@ -1,0 +1,8 @@
+/// Module export mixin
+/// This mixin helps creating an element to take the the whole height of the screen.
+/// @access public
+/// @param {String} $heightAdjustment - a height adjustment for header and/or footer
+@mixin vh-100($heightAdjustment: "0px") {
+  height: calc(100vh - #{$heightAdjustment}); /* Fallback for browsers that do not support Custom Properties */
+  height: calc((var(--vh, 1vh) * 100 - #{$heightAdjustment}));
+}

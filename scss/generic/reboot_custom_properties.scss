@@ -1,0 +1,10 @@
+@import "../settings/variables";
+@import "../tools/mixins/import_once";
+
+@include import-once("generic/custom_properties") {
+  :root {
+    --transparent: #{rgba(#fff, 0.001)};
+    --black: #000;
+    --white: #fff;
+  }
+}
