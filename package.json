@@ -16,6 +16,9 @@
     "no-class",
     "framework"
   ],
+  "engines": {
+    "node": ">=12.16.2"
+  },
   "author": {
     "name": "Daniel González",
     "email": "d.g.g69@me.com"
