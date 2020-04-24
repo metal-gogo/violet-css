@@ -1,0 +1,28 @@
+{
+  "name": "violet-css",
+  "version": "0.1.0",
+  "description": "No-class CSS framework to get your project started",
+  "main": "violet.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metal-gogo/violet-css.git"
+  },
+  "keywords": [
+    "css",
+    "scss",
+    "no-class",
+    "framework"
+  ],
+  "author": {
+    "name": "Daniel González",
+    "email": "d.g.g69@me.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metal-gogo/violet-css/issues"
+  },
+  "homepage": "https://github.com/metal-gogo/violet-css#readme"
+}
