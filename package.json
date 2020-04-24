@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "No-class CSS framework to get your project started",
   "main": "violet.scss",
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/metal-gogo/violet-css.git"
@@ -27,5 +24,29 @@
   "bugs": {
     "url": "https://github.com/metal-gogo/violet-css/issues"
   },
-  "homepage": "https://github.com/metal-gogo/violet-css#readme"
+  "homepage": "https://github.com/metal-gogo/violet-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "clean-css-cli": "^4.3.0",
+    "node-sass": "^4.14.0",
+    "postcss-cli": "^7.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output css/violet.css css/violet.css",
+    "build-cleancss": "cleancss -o css/violet.min.css css/violet.css",
+    "build-clean": "rimraf css",
+    "build-sass": "node-sass --output-style expanded --source-map true violet.scss css/violet.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch",
+    "test": "echo \"Error: no test specified\""
+  },
+  "files": [
+    "css",
+    "scss",
+    "violet.scss",
+    "LICENSE",
+    "README.md"
+  ]
 }
